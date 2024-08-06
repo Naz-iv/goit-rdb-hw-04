@@ -1,0 +1,21 @@
+USE LibraryManagement;
+
+INSERT INTO authors (author_name) VALUES 
+('Taras Sherchenko'),
+('Ivan Franko');
+
+INSERT INTO genres (genre_name) VALUES 
+('Lyrics'),
+('Novel');
+
+INSERT INTO books (title, publication_year, author_id, genre_id) VALUES 
+('Zapovit', 1995, 1, 1),
+('Zahar Berkut', 1999, 2, 2);
+
+INSERT INTO users (username, email) VALUES 
+('user1', 'user1@gmail.com'),
+('user2', 'user2@gmail.com');
+
+INSERT INTO borrowed_books (book_id, user_id, borrow_date, return_date) VALUES 
+(1, 1, '2024-08-01', '2024-08-5'),
+(2, 2, '2024-08-02', '2024-06-6');
